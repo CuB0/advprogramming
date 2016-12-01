@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="it">
+ <head>
+  <title>Todo-list di CuB0</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+ </head>
+ <body>
+  <div class="row">
+  	<div class="col-lg-8">
+  		<div class="row">
+  			<div class="col-lg-12" id="addtodo">
+  			 <h2>Aggiungi Todo</h2>
+			<form>
+			  <div class="form-group">
+			    <label for="name">Nome Todo</label>
+			    <input type="text" class="form-control" name="name" placeholder="todo-name">
+			  </div>
+			  <div class="form-group">
+			    <label for="description">Descrizione:</label>
+			    <input type="text" class="form-control" name="description" placeholder="Descrizione">
+			  </div>
+			  <div class="radio">
+				  <label>
+				    <input type="radio" name="important" value="true">
+				     Importante
+				  </label>
+			   </div>
+			   <div class="radio">
+  				<label>
+    			 <input type="radio" name="IMPORTANT" value="false" checked>
+    				Non importante
+  				</label>
+			   </div>
+			  <button type="submit" class="btn btn-default">Aggiungi todo</button>
+			</form>
+
+  			</div>
+  		</div>
+  		<div class="row">
+  			<div class="col-lg-12">
+  			 <h2>Lista Todo</h2>
+  			 <table class="table table-striped">
+  			  <tr>
+  			   <th>Nome</th>
+  			   <th>Descrizione</th>
+  			   <th>Importante</th>
+  			   <th>Operazioni</th>
+  			  </tr>
+  			   <th>Fai la spesa</th>
+  			   <th>Non mangi</th>
+  			   <th>True/False</th>
+  			   <th>
+  			   	<button type="button" class="btn btn-success btn-xs">Fatto</button>
+  			   	<button type="button" class="btn btn-danger btn-xs">Cancella</button>
+  			   </th>
+  			 </table>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="col-lg-4" id="todofatti">
+  		<h2>Lista Todo già fatti</h2>
+  		<ul>
+  		 <li>Todo 1</li>
+  		 <li>Todo 2</li>
+  		 <li>Todo 3</li>
+  		</ul>
+  	</div>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+ </body>
+</html>
