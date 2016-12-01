@@ -33,7 +33,7 @@
     "public": false
   },
   "todo": {
-    "dataSource": "todos",
+    "dataSource": "mysql",
     "public": true
   }
 }

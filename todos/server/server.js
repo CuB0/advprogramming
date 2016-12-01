@@ -12,7 +12,7 @@ app.start = function() {
     var baseUrl = app.get('url').replace(/\/$/, '');
     console.log('Web server listening at: %s', baseUrl);
     //update DB
-    app.datasources.todos.autoupdate();
+    app.datasources.mysql.autoupdate();
     //end update DB
     if (app.get('loopback-component-explorer')) {
       var explorerPath = app.get('loopback-component-explorer').mountPath;
